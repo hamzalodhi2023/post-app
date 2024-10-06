@@ -29,3 +29,7 @@ export const EditPosts = (title, news, creatorName, creatorEmail, id) => {
     creatorEmail,
   });
 };
+
+export const SingleNewsdata = (id) => {
+  return api.get("/posts/" + id);
+};

@@ -31,6 +31,7 @@ app.get("/posts/:id", (req, res) => {
     } else {
       let jsonData = JSON.parse(data);
       const post = jsonData.find((item) => item.id == id);
+      console.log(post);
       return res.status(200).send(post);
     }
   });
